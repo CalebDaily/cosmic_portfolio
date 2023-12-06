@@ -1,0 +1,194 @@
+/* general */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    background-color: #f0f0f3ff;
+    min-height: 66vh;
+}
+
+header{
+    background-color: rgb(23, 23, 54);
+    color: rgb(0, 183, 255);
+}
+header > ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+}
+li:nth-child(1) .btn{
+    border-radius: 25px 0px 0px 25px;
+}
+li:nth-child(3) .btn{
+    border-radius: 0px 25px 25px 0px;
+}
+.btn {
+    background-color: rgb(0, 183, 255);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+.btn:hover {
+    background-color: dodgerblue;
+}
+.title{
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid dodgerblue;
+}
+footer{
+    background-color: rgb(23, 23, 54);   
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* gallery */
+.gallery_section{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+}
+.gallery_box{
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 0px 0px lightgray;
+    border-radius: 25px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery_box > h3 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(23, 23, 54);  
+    padding: 10px;
+}
+.gallery_box > p {
+    margin-bottom: 10px;
+    color: rgb(23, 23, 54);
+    text-align:justify;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+.gallery_box > a {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(23, 23, 54);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0px 0px 20px 25px;
+    padding: 10px;
+}
+.gallery_box > a:link {
+    color: white;
+}
+.gallery_box > a:hover {
+    color: rgb(0, 183, 255);
+}
+.gallery_box > a:link {
+    color: white;
+}
+/* essays */
+.essay main{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    background-color: #f0f0f3ff;
+    min-height: 66vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(23, 23, 54);
+    border-bottom: 10px solid #f0f0f3ff;
+    border-radius: 10px;
+    max-width: min-content;
+    min-width: 50%;
+    margin: 0 auto;
+}
+
+.essay_selection > p{
+    box-shadow: 0px 5px 0px 0px lightgray;
+    line-height: 2;
+    font-size: 20px;
+    max-width: 700px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align:justify;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+    display: flex;
+}
+
+.essay_selection{
+    justify-content: center;
+    display: flex;
+}
+
+.essay_refrences{
+    padding-left: 22px ;
+    text-indent: -22px ;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 500px) {
+    .gallery_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        border-bottom: 10px solid white;
+        border-radius: 10px;
+
+    }
+    .gallery_box{
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0px 5px 0px 0px lightgray;
+        border-radius: 25px;
+        width: 90%;
+    }
+
+}
