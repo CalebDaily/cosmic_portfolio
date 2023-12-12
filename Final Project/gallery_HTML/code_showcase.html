@@ -18,7 +18,81 @@
         </ul>
     </header>
     <main>
+      <div class="code_selecion">
+        <article class="code_box">
+          <img src="../assets/images/code_image1.png" alt="code image 1">
+        </article>
+        <article class="code_box">
+          <h3>CSS</h3>
+          <p>
+            This is a selection of the css used in the project. 
+            During the development of this website we integrated several classes which 
+            allow for easy expansion of the website in the future including compatibility for images, essays, and more code showcases. 
+            It was made for easy expansion and made to be as clear and understandable as possible so in the future the website can be added on or expanded.
+          </p>
+          <code>
+            .code_box > p {
+              margin-bottom: 10px;
+              color: rgb(23, 23, 54);
+              text-align:justify;
+              padding-right: 20px;
+              padding-left: 20px;
+              flex-grow: 1;
+              font-size: 20px;
+            }
+          </code>
+          <div class="code_box_color">
+          </div>
+        </article>
+      </div>
 
+      <div class="code_selecion">
+        <article class="code_box">
+          <h3>LUA</h3>
+          <p>
+            I have also coded in LUA, as my experience goes it's mostly just google searches and play testing. 
+            I've done minecraft modding for a while now and have learned how to use and make mods. 
+            One of which is a power scripting system called Figura, designed originally for making avatars, 
+            it's now used to completely overhaul the game in any manner using a live scripting system. What to invert gravity? 
+            Want to cast lightning from your hands? It's all possible. 
+          </p>
+          <code>
+            for I = 0,1, (1/ray_dist)/1 do 
+              point1 = math.lerp( player:getPos()+vec(0,player:getEyeHeight(),0) , ray_pos, I)
+              point1 = point1 + vec(math.random(-7,7)/10,math.random(-7,7),0)
+
+          </code>
+          <div class="code_box_color">
+          </div>
+        </article>
+        <article class="code_box">
+          <img src="../assets/images/code_image2.png" alt="code image 2">
+        </article>
+      </div>
+
+      <div class="code_selecion">
+        <article class="code_box">
+          <img src="../assets/images/code_image3.png" alt="code image 3">
+        </article>
+        <article class="code_box">
+          <h3>GML</h3>
+          <p>
+            I have also done game development using unity and gamemaker, in which they use various coding languages, however, gamemaker uses GML. This is the third most familiar coding language to me, with Python in first, LUA in second, and GML in third. This is a block based building system which autotyles blocks to create solid surfaces. 
+          </p>
+          <code>
+            else if U && !D && L && R && UR && UL then
+            image_index = 17
+          else if U && !D && L && !R && UL then
+            image_index = 18
+          else if U && !D && !L && !R then
+            image_index = 19
+          else if !U && D && L && R && DR && !DL then
+            image_index = 20
+          </code>
+          <div class="code_box_color">
+          </div>
+        </article>
+      </div>
     </main>
     <footer>
         <p>&copy; 2023 Cosmic Corp. All rights reserved</p>

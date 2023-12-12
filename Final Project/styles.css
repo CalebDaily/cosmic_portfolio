@@ -1,7 +1,17 @@
 /* general */
+@font-face {
+    font-family: Silkscreen;
+    src: url(assets/fonts/Silkscreen-Regular.ttf);
+}
+@font-face {
+    font-family: Halogen;
+    src: url(assets/fonts/HalogenbyPixelSurplus-Regular.otf);
+}
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -51,7 +61,9 @@ li:nth-child(3) .btn{
     padding: 20px;
     display: flex;
     justify-content: center;
-    border-bottom: 10px solid dodgerblue;
+    font-weight: bold;
+    font-family: Halogen, Helvetica, sans-serif;
+    letter-spacing: 5px;
 }
 footer{
     background-color: rgb(23, 23, 54);   
@@ -63,7 +75,6 @@ footer{
 /* gallery */
 .gallery_section{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     padding-bottom: 10px;
     margin-bottom: 0px;
@@ -75,10 +86,11 @@ footer{
     background-color: white;
     box-shadow: 0px 5px 0px 0px lightgray;
     border-radius: 25px;
-    width: 500px;
+    /* max-width: 500px; */
     padding: 10px;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .gallery_box > h3 {
@@ -158,6 +170,9 @@ h2{
     border-bottom: 10px solid white;
     border-radius: 10px;
     display: flex;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
 }
 
 .essay_selection{
@@ -171,9 +186,72 @@ h2{
     display: flex;
     justify-content: center;
 }
+/* code showcase */
+
+.code_selecion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-bottom: 10px solid white;
+    border-radius: 10px;
+}
+.code_box{
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 0px 0px lightgray;
+    border-radius: 25px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.code_box > h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(23, 23, 54);  
+    padding: 10px;
+}
+
+.code_box > code {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(23, 23, 54);  
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.code_box > p {
+    margin-bottom: 10px;
+    color: rgb(23, 23, 54);
+    text-align:justify;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-grow: 1;
+    font-size: 20px;
+}
+.code_box > div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(23, 23, 54);
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0px 0px 20px 25px;
+    padding: 30px;
+}
+
+.code_box > img{
+    border-radius: 25px;
+}
+
+
+
 @media screen and (max-width: 500px) {
     .gallery_section{
-        display: flex;
         flex-direction: column;
         justify-content: center;
         padding-bottom: 10px;
@@ -183,6 +261,24 @@ h2{
 
     }
     .gallery_box{
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0px 5px 0px 0px lightgray;
+        border-radius: 25px;
+        width: 90%;
+    }
+    .code_selecion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        border-bottom: 10px solid white;
+        border-radius: 10px;
+
+    }
+    .code_box{
         margin: 10px;
         padding: 10px;
         background-color: white;
